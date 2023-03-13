@@ -7,7 +7,7 @@ public class Proyect1 {
         Figura nuevaFigura = new Figura();
 
         nuevaFigura.setColor("naranja");
-        nuevaFigura.setNumLados(5);
+        
 
     
         if(esTriangulo(nuevaFigura)==true){
