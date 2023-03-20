@@ -29,7 +29,9 @@ public class Triangulo extends Figura {
         this.altura = altura;
     }
 
+    @Override
     public Float calcularArea() {
-        return (base*altura)/2;
+        // TODO Auto-generated method stub
+        return null;
     }
 }

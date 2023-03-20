@@ -20,10 +20,11 @@ public class Circunferencia extends Figura {
     public void setRadio(Float radio) {
         this.radio = radio;
     }
-
-    public Float calcularArea() {
-        return (radio * radio * 3.1415f);
+    //--------------
+    
+    public Float calcularArea(){
+        // TODO Auto-generated method stub
+        return null;
     }
 
-    //hola
 }

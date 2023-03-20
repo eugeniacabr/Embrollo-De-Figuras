@@ -20,8 +20,10 @@ public class Cuadrado extends Figura {
         this.lado = lado;
     }
 
-    public Float calcularArea(){
-        return lado*lado;
+    @Override
+    public Float calcularArea() {
+        // TODO Auto-generated method stub
+        return null;
     }
 
 }

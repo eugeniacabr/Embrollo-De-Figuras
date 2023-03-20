@@ -1,6 +1,12 @@
 package Figuras;
 
-public abstract class Figura {
+public abstract class Figura implements InterfaceFigura{
+
+    @Override
+    public Float calcularArea() {
+        // TODO Auto-generated method stub
+        return null;
+    }
 
     private String color;
     private Integer numLados;
@@ -33,6 +39,6 @@ public abstract class Figura {
         return numLados;
     } 
 
-    public abstract Float calcularArea();
+    
 
 }
