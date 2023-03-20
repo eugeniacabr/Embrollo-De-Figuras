@@ -2,29 +2,26 @@ package Figuras;
 
 public class Cuadrado extends Figura {
     
+    private Float lado;
 
-    private double lado;
-   
+    public Cuadrado() { 
+    }
 
-    public Cuadrado(String color, double lado){
+    public Cuadrado(String color, Float lado) {
         super(color, 4);
-        this.lado=lado;
+        this.lado = lado;
     }
 
-    public void setLado(double lado){
-        this.lado=lado;
+    public Float getLado() {
+        return this.lado;
     }
-    public double getLado(){
-        return lado;}
-        
-    @Override
-    public String toString() {
-        return "{" +
-                " color='" + getColor() + "'" +
-                " lado='" + getLado() + "'" +
-                ", figura='" + getClass().getName() + "'" +
-            "}";
+
+    public void setLado(Float lado) {
+        this.lado = lado;
     }
+
+    public Float calcularArea(){
+        return lado*lado;
+    }
+
 }
-
-

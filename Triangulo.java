@@ -1,39 +1,35 @@
 package Figuras;
 
-public class Triangulo extends Figura{
-    private double base;
-    private double altura;
+public class Triangulo extends Figura {
+    private Float base;
+    private Float altura;
 
-    public Triangulo(){
-
-
+    public Triangulo() { 
     }
 
-    public Triangulo(String color, double base, double altura){
+    public Triangulo(String color, Float base, Float altura) {
         super(color, 3);
-        this.base=base;
-        this.altura=altura;
+        this.base = base;
+        this.altura = altura;
     }
 
-    public void setBase(double base){
-        this.base=base;
+    public Float getBase() {
+        return this.base;
     }
 
-    public void setAltura(double altura){
-        this.altura=altura;}
-    
-    public double getBase(){
-        return base;
+    public void setBase(Float base) {
+        this.base = base;
     }
-    public double getAltura(){
-        return altura;}
-        
-        @Override
-        public String toString() {
-            return "{" +
-                " color='" + getColor() + "'" +
-                " base='" + getBase() + "'" +
-                ", altura='" + getAltura() + "'" +
-                "}";
-        }
+
+    public Float getAltura() {
+        return this.altura;
+    }
+
+    public void setAltura(Float altura) {
+        this.altura = altura;
+    }
+
+    public Float calcularArea() {
+        return (base*altura)/2;
+    }
 }
